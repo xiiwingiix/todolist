@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+*:focus {
+	outline: none;
+}
+body {
+	background: #eee;
+	text-align: center;
+	word-wrap: break-word;
+}
+ol, ul {
+	padding: 0;
+}
+li {
+	list-style: none;
+}
