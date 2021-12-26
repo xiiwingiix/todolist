@@ -11,7 +11,7 @@ window.onload = function(){
 			var ele_todo = document.createElement('li');
 			var ele_btn  = document.createElement('span');
 
-			//todoList 
+			//todoList
 			ele_todo.textContent = insert_todo.value;
 			ele_todo.addEventListener('click', doneList);
 
@@ -35,13 +35,13 @@ window.onload = function(){
 			e.stopPropagation();
 
 			var confirm_delete = confirm('삭제하시겠습니까?');
-			
+
 			if (confirm_delete) {
 				e.target.parentNode.remove();
-			} 
-		} 
+			}
+		}
 	}
-	
+
 	//done move function
 	function doneList(e){
 		if(e){
@@ -49,6 +49,6 @@ window.onload = function(){
 			if ( confirm_move ) {
 				list_done.appendChild(e.target);
 			}
-		} 
+		}
 	}
 }
